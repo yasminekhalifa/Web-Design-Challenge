@@ -12,8 +12,14 @@ body {
   
   /* Giving our navbar some padding and a background color */
   .navbar-brand {
+    color: #ffffff;
     padding: 10px;
-    background: #5191fd;
+    background: #1894E0;
+  }
+  .navbar {
+    color: #1894E0;
+    padding: 0px;
+    background: #ffffff;
   }
   .float-left-area  {
     width: 70%;
@@ -39,26 +45,26 @@ body {
     border: #999999 1px solid;
     min-height: 60px;
     }
-div.content {
-      margin-left: 200px;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-    
-    /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-.sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-.sidebar a {float: left;}
-div.content {margin-left: 0;}
-    }
-    
-    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-.sidebar a {
-        text-align: center;
-        float: none;}
+hr.style-eight {
+        height: 10px;
+        border: 1;
+        box-shadow: inset 0 9px 9px -3px rgba(24, 148, 224, 0.92);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        }
+
+.carousel-caption {
+    color: #1894E0
 }
+.col-md-6 {
+    padding: 20px;
+}
+    
+@media (max-width: 500px) {
+        * .navbar {
+          background: #1894E0;
+        } */
+        

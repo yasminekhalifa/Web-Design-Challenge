@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="comparision.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Max_temp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+      
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-6 ">
+              <h1 class="display-4">Summary: Latitude vs X</h1>
+            <hr class="style-eight" />
+              <img src="Resources/assets/images/Fig1.png" alt="..." class="rounded float-left" width="300" height="300"><br>
+              <br/>
+              <p>The purpose of this project was to analyze how weather chages as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+      </div>
+      <div class="col-sm-9 col-md-6 ">
+        <div class="content">
+            <h3 class="text-center">Visualizations</h3>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="Max_temp.html">
+                  <img src="Resources/assets/images/Fig1.png" class="d-block w-100" alt="..."></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Max Temperature</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="humidity.html">
+                  <img src="Resources/assets/images/Fig2.png" class="d-block w-100" alt="..."></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Humidity</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="Cloudiness.html">
+                  <img src="Resources/assets/images/Fig3.png" class="d-block w-100" alt="..."></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Cloudiness</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="wind_speed.html">
+                  <img src="Resources/assets/images/Fig4.png" class="d-block w-100" alt="..."></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Wind Speed</h5>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>   
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>
